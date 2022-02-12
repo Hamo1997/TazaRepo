@@ -23,6 +23,7 @@ Route::group([
     Route::post('logout', 'AuthController@logout');
 });
 
+
 Route::get('post',function (){
     return 'sd';
 })->middleware('jwt.auth');
